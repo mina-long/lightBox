@@ -1,0 +1,20 @@
+lightBox组件的封装
+
+项目技术栈：
+css3+html5+jquery
+
+主要是用到构造函数定义共同处理的方法
+
+兼容性问题：由于ie8以下对span标签无法有效的绑定事件，因此要给其绑定的事件加个background：url（）；
+                ie6无法识别PNG的图片 因此要使用处理PNG图片的
+                  <!--处理ie6无法识别png格式-->
+                <!--[!if IE 6]>
+                <script type="text-javascript" src="https://cdn.bootcss.com/dd_belatedpng/0.0.8/dd_belatedpng.min.js"></script>
+                <script>
+                    DD_belatedPNG.fix("#G-lightbox-mask,#G-lightbox-popup .lightbox-pic-view .lightbox-btn,#G-lightbox-popup .lightbox-pic-caption")
+                </script>
+                <![endif]-->
+                
+  新知识：function(e){
+            var keyValue = e.which //这个可以查出键盘的值
+            }
