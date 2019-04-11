@@ -1,0 +1,155 @@
+@charset 'utf-8';
+
+/*样式重置*/
+
+html{
+    color:#000;
+    background:#FFF;
+    font-size: 14px;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td{margin:0;padding:0}
+table{
+    border-collapse:collapse;
+    border-spacing:0
+    }
+fieldset,img{border:0}
+a{
+    text-decoration: none;
+}
+em,strong,u,i{
+    font-style:normal;
+    font-weight:normal
+}
+ol,ul{
+    list-style:none
+}
+caption,th{
+    text-align:left
+}
+h1,h2,h3{
+    font-size:100%;font-weight:normal
+}
+input,textarea,select{
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+     /*兼容ie*/
+    *font-size:100%      
+   
+}
+.clearfix{zoom:1;}
+.text-ellipsis{white-space: nowrap;/*设置不换行*/text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+
+
+/*lightbox图片画廊样式*/
+#G-lightbox-mask{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 10000;
+    display: none;
+    background:url(../icon/opacity.png) repeat left top;
+    /*fliter:alpha(opacity=50%);*/
+    
+}
+#G-lightbox-popup{
+    position:fixed;
+    left:50%;
+    top:50px;
+    width:400px;
+    /*margin-left: -200px;*/
+    /*height:300px;*/
+    z-index: 10001;
+    display: none;
+    background: #FFF;
+}
+.lightbox-pic-view{
+    position:relative;
+    border:5px solid #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+    background: url(../icon/loading.gif) no-repeat center center;
+    background-color: #FFF;
+}
+.lightbox-btn{
+    position: absolute;
+    top: 0;
+    width:40%;
+    background:url(../icon/opacity.png) no-repeat;
+    z-index: 1;
+    height: 100%;
+}
+.lightbox-prev-btn{
+    left: 0;
+}
+.lightbox-prev-btn-show{
+    background: url(../icon/prev.png) no-repeat left center;
+    cursor: pointer;
+}
+.lightbox-next-btn{
+    right: 0;
+}
+.lightbox-next-btn-show{
+    background: url(../icon/next.png) no-repeat right center;
+    cursor: pointer;
+}
+.lightbox-img{
+    display: block;
+    margin: 0 auto;
+}
+.lightbox-pic-caption{
+    position:relative;
+    top:0;
+    margin: 0 5px;
+    background-color: rgba(0,0,0,.5);
+    margin-top: -60px;
+    z-index: 2;
+    background:url(../icon/opacity.png) no-repeatn left top;
+    /*margin-left:25px;*/
+}
+.lightbox-caption-area{
+    color: #FFF;
+    padding: 10px 5px;
+  
+}
+.lightbox-of-index{
+    color: #999;
+}
+.lightbox-close-btn{
+    position:absolute;
+    width:27px;
+    height: 27px;
+    top:13px;
+    right:10px;
+    color:#FFF;
+    background: url(../icon/close.png) no-repeat;
+}
+.disabled{
+    display: block;
+}
